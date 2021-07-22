@@ -8,7 +8,7 @@ import "text/template"
 	...
 }
 
-a: {
+#a: {
 	in: #Input
 	result:  template.Execute("test", in)
 }

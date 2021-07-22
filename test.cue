@@ -14,4 +14,4 @@ _transform: {
 	out: [ for x in _intermediate {x.result}]
 }
 
-_transform & {_in: [foo.a]}
+_transform & {_in: [foo.#a]}
