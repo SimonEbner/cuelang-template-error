@@ -2,8 +2,6 @@ package foo
 
 import "text/template"
 
-_dummy: template.Execute("supress error 'imported and not userd'", {})
-
 #Input: {
 	param2: string
 	param3: string
@@ -12,5 +10,5 @@ _dummy: template.Execute("supress error 'imported and not userd'", {})
 
 a: {
 	in: #Input
-	result:  in
+	result:  template.Execute("test", in)
 }
